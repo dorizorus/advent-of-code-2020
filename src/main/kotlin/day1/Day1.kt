@@ -6,7 +6,6 @@ import java.io.File
  * Find 2 numbers adding to 2020 and multiply them
  */
 fun List<Int>.findPairAndMultiply(): Int {
-    var matchFound = false
     for (i in this.indices)
         for (j in i + 1 until this.size)
             if (this[i] + this[j] == 2020)
