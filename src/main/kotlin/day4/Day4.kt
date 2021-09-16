@@ -169,7 +169,6 @@ fun isHgtWithinRange(hgt: String?, hgtCmLowerBound: Int, hgtCmUpperBound: Int,
 
     val type = hgt?.substring(hgt.length - 2)
     val value = hgt!!.substring(0, hgt.length - 2)
-    println("$type : $value")
 
     if (type == "in") {
         if (value in hgtInLowerBound.toString()..hgtInUpperBound.toString())
@@ -218,5 +217,4 @@ fun main() {
             byrLowerBound, byrUpperBound, iyrLowerBound, iyrUpperBound, eyrLowerBound, eyrUpperBound,
             hgtCmLowerBound, hgtCmUpperBound, hgtInLowerBound, hgtInUpperBound, hclSize, eclValues, pidSize)
     println("validated passports part 2 => $validatedPassportsPart2")
-
 }
