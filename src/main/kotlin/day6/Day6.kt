@@ -50,7 +50,7 @@ fun main() {
                 for (i in 1..group.size - 2) {
                     // then we intersect the rest of the group with the intersection
                     intersection = intersection.intersect(group[i + 1].toSet())
-                    // if interesection is empty at a later moment, we break out of this loop to get to the next group
+                    // if intersection is empty at a later moment, we break out of this loop to get to the next group
                     if (intersection.isEmpty())
                         break
                 }
