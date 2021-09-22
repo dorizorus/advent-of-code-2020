@@ -34,10 +34,10 @@ fun main(args: Array<String>) {
     // opening input files (strings) and converting them to ints
     val numbers = File("""src\main\kotlin\day1\input.txt""").readLines().map { it.toInt() }
     val pairMult = numbers.findPairAndMultiply()
-    println("multiplication of a pair of number adding to 2020 : $pairMult")
+    println("multiplication of a pair of number adding to 2020 : $pairMult") // 15488
 
     val tripleMult = numbers.findTripleAndMultiply()
-    println("multiplication of three numbers adding to 2020 : $tripleMult")
+    println("multiplication of three numbers adding to 2020 : $tripleMult") // 2236016
 }
 
 

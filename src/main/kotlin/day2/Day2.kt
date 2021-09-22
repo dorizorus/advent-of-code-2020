@@ -51,18 +51,17 @@ fun main(args: Array<String>) {
 
     //first we read the file and create a list of strings, each line of the file contains the range, the letter and the password
     val inputsAsStrings = File("""src\main\kotlin\day2\input.txt""").readLines()
-        .map { it }
 
-    //second we map every entry of the first list into a List<List<String>>, every entry will be composed as such :
+    // second we map every entry of the first list into a List<List<String>>, every entry will be composed as such :
     // index 0 = lower bound of the range, 1 = upper bound of the range (in version2, these becomes charPositions in password (counting from 1))
     // index 2 = letter (descriptor), 3 = password
     val inputsSplit = inputsAsStrings.map { it.replace(":", "").split('-', ' ') }
 
     val validPasswordsProtocol1 = validatePasswordProtocol1(inputsSplit)
-    println("# of valid passwords with protocol1 : $validPasswordsProtocol1")
+    println("# of valid passwords with protocol1 : $validPasswordsProtocol1") // 666
 
     val validPasswordsProtocol2 = validatePasswordProtocol2(inputsSplit)
-    println("# of valid passwords with protocol2 : $validPasswordsProtocol2")
+    println("# of valid passwords with protocol2 : $validPasswordsProtocol2") // 670
 
 
 }

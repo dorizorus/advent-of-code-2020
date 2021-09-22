@@ -195,8 +195,8 @@ fun main() {
     val validatedPassportsPart1Method1 = validatePassportPart1Method1(requiredFields, "cid", passports)
     val validatedPassportsPart1Method2 = validatePassportPart1Method2(requiredFields, "cid", passports)
     // answer in both cases will be 260 with the given batch
-    println("validated passports part1 method 1 => $validatedPassportsPart1Method1")
-    println("validated passports part1 method 2 => $validatedPassportsPart1Method2")
+    println("validated passports part1 method 1 => $validatedPassportsPart1Method1") // 260
+    println("validated passports part1 method 2 => $validatedPassportsPart1Method2") // 260
 
     // Part2
     val byrLowerBound = 1920;
@@ -216,5 +216,6 @@ fun main() {
     val validatedPassportsPart2 = validatePassportPart2(requiredFields, "cid", passports,
             byrLowerBound, byrUpperBound, iyrLowerBound, iyrUpperBound, eyrLowerBound, eyrUpperBound,
             hgtCmLowerBound, hgtCmUpperBound, hgtInLowerBound, hgtInUpperBound, hclSize, eclValues, pidSize)
-    println("validated passports part 2 => $validatedPassportsPart2")
+
+    println("validated passports part 2 => $validatedPassportsPart2") // 153
 }
